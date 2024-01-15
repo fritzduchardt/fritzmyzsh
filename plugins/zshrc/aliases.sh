@@ -7,6 +7,7 @@ alias rm="rm -rf"
 alias pwg="pwgen -s -y $((RANDOM %20 + 20)) | cut -f1 | c"
 alias fzf="fzf --ansi"
 alias aa="alias | fzf"
+alias rg="rg -i"
 
 # Git
 alias lg="lazygit"

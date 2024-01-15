@@ -74,9 +74,9 @@ function gunwipall() {
 
   if [[ "$_commit" != "$(git rev-parse HEAD)" ]]; then
     git reset $_commit || return 1
+  fi
 }
 
-  fi
 # Warn if the current branch is a WIP
 function work_in_progress() {
   command git -c log.showSignature=false log -n 1 2>/dev/null | grep -q -- "--wip--" && echo "WIP!!"
