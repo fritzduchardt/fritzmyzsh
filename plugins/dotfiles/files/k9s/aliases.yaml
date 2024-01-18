@@ -1,0 +1,15 @@
+aliases:
+  cr: clusterroles
+  crb: clusterrolebindings
+  dp: deployments
+  jo: jobs
+  np: networkpolicies
+  rb: rolebindings
+  ro: roles
+  sec: v1/secrets
+  # siemens
+  ip: ipams
+  ag: applicationgroups
+  app: application
+  ap: assignmentplan
+  nt: networktopology

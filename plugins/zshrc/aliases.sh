@@ -29,3 +29,7 @@ alias lS='ls -1FSsh'
 alias lart='ls -1Fcart'
 alias lrt='ls -1Fcrt'
 
+# myks
+alias ma="myks apply"
+alias mr="myks render"
+
