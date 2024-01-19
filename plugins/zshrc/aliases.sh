@@ -32,4 +32,5 @@ alias lrt='ls -1Fcrt'
 # myks
 alias ma="myks apply"
 alias mr="myks render"
+alias maa="myks all"
 

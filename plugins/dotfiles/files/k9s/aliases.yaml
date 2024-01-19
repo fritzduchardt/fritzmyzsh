@@ -3,7 +3,6 @@ aliases:
   crb: clusterrolebindings
   dp: deployments
   jo: jobs
-  np: networkpolicies
   rb: rolebindings
   ro: roles
   sec: v1/secrets
@@ -13,3 +12,6 @@ aliases:
   app: application
   ap: assignmentplan
   nt: networktopology
+  ne: networkendpoints
+  np: networkpaths
+  nl: networklinks
