@@ -6,7 +6,11 @@ aliases:
   rb: rolebindings
   ro: roles
   sec: v1/secrets
-  # siemens
+  # monitoring
+  pm: podmonitors
+  sm: servicemonitors
+  pr: prometheusrules
+  # networking
   ip: ipams
   ag: applicationgroups
   app: application
