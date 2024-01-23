@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Misc
 alias zshconfig="vim ~/.zshrc"
 alias c="xclip -r -sel clip"
