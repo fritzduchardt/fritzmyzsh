@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 dotfile_config_location=~/.config
 dotfile_location=~/
 for file in $ZSH_CUSTOM/lib/*.sh; do

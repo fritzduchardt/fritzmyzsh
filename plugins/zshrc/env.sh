@@ -1,5 +1,6 @@
+#!/usr/bin/env bash
 # GO
-export GOPATH=$HOME/go
+export GOPATH="$HOME"/go
 export GOROOT=/usr/local/go
 
 # McFly

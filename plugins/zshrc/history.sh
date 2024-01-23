@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 HISTSIZE=10000              #How many lines of history to keep in memory
 HISTFILE=~/.zsh_history     #Where to save history to disk
 setopt EXTENDED_HISTORY
