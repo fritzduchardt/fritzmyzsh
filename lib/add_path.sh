@@ -9,6 +9,8 @@ add_path_entry() {
       export PATH="$new_directory:$PATH"
       return 0
     fi
+  else
+    log::error "Directory '$new_directory' does not exist"
+    return 1
   fi
-  return 1
 }
