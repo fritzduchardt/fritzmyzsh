@@ -10,6 +10,7 @@ alias pwg="pwgen -s -y "$((RANDOM %20 + 20))" | cut -f1 | c"
 alias fzf="fzf --ansi"
 alias aa="alias | fzf"
 alias rg="rg -i"
+alias fd="fd -i"
 alias space="du --max-depth=1 -h | sort -r -h"
 
 # Git

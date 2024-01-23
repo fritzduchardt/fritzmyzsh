@@ -10,7 +10,7 @@ add_path_entry() {
       return 0
     fi
   else
-    log::error "Directory '$new_directory' does not exist"
+    log::debug "Directory '$new_directory' does not exist"
     return 1
   fi
 }
