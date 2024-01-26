@@ -12,6 +12,11 @@ alias stashall="ga . && git stash"
 # Docker
 alias dps="docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
 
+# journalctl
+alias jc="journalctl"
+alias jcu="journalctl -u"
+alias jcuf="journalctl -f -u"
+
 # ls
 alias l='ls -lFh'          #size,show type,human readable
 alias la='ls -lAFh'        #long list,show almost all,show type,human readable
@@ -36,8 +41,15 @@ alias rg="rg -i"
 alias fd="fd --hidden --exclude .git"
 alias space="du --max-depth=1 -h | sort -r -h"
 alias cat="bat"
+alias nctl="nerdctl"
 
 # myks
 alias ma="myks apply"
 alias mr="myks render"
 alias maa="myks all"
+
+# nc
+alias ncl="nc -v 127.0.0.1"
+
+# ss
+alias ss="ss -tlpn"
