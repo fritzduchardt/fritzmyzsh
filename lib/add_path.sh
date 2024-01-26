@@ -6,6 +6,7 @@ add_path_entry() {
     # Check if the directory is already in PATH
     if [[ ":$PATH:" != *":$new_directory:"* ]]; then
       # Add the directory to PATH
+      log::debug "Adding to path '$new_directory'"
       export PATH="$new_directory:$PATH"
       return 0
     fi

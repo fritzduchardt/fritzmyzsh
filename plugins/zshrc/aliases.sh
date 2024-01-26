@@ -1,17 +1,8 @@
 #!/usr/bin/env bash
 
-# Misc
-alias zshconfig="vim ~/.zshrc"
-alias c="xclip -r -sel clip"
-alias ch="cat ~/.zsh_history | tail -n2 | head -n1 | perl -pe 's/^.*?;//' | c"
-alias rgi="rg -u -i"
-alias rm="rm -rf"
-alias pwg="pwgen -s -y "$((RANDOM %20 + 20))" | cut -f1 | c"
-alias fzf="fzf --ansi"
-alias aa="alias | fzf"
-alias rg="rg -i"
-alias fd="fd --hidden --exclude .git"
-alias space="du --max-depth=1 -h | sort -r -h"
+# etcd
+# member list
+alias etcdml="ETCDCTL_API=3 etcdctl member list"
 
 # Git
 alias lg="lazygit"
@@ -32,8 +23,21 @@ alias lS='ls -1FSsh'
 alias lart='ls -1Fcart'
 alias lrt='ls -1Fcrt'
 
+# misc
+alias zshconfig="vim ~/.zshrc"
+alias c="xclip -r -sel clip"
+alias ch="cat ~/.zsh_history | tail -n2 | head -n1 | perl -pe 's/^.*?;//' | c"
+alias rgi="rg -u -i"
+alias rm="rm -rf"
+alias pwg="pwgen -s -y "$((RANDOM %20 + 20))" | cut -f1 | c"
+alias fzf="fzf --ansi"
+alias aa="alias | fzf"
+alias rg="rg -i"
+alias fd="fd --hidden --exclude .git"
+alias space="du --max-depth=1 -h | sort -r -h"
+alias cat="bat"
+
 # myks
 alias ma="myks apply"
 alias mr="myks render"
 alias maa="myks all"
-
