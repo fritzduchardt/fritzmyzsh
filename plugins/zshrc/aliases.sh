@@ -9,8 +9,9 @@ alias lg="lazygit"
 alias pushmr="git push origin HEAD -o merge_request.create"
 alias stashall="ga . && git stash"
 
-# Docker
+# docker
 alias dps="docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
+alias dims="docker images"
 
 # journalctl
 alias jc="journalctl"
@@ -42,6 +43,7 @@ alias fd="fd --hidden --exclude .git"
 alias space="du --max-depth=1 -h | sort -r -h"
 alias cat="bat"
 alias nctl="nerdctl"
+alias cpath="echo $PATH | c"
 
 # myks
 alias ma="myks apply"
