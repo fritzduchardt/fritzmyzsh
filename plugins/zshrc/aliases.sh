@@ -44,6 +44,7 @@ alias space="du --max-depth=1 -h | sort -r -h"
 alias cat="bat"
 alias nctl="nerdctl"
 alias cpath="echo $PATH | c"
+alias s="switch"
 
 # myks
 alias ma="myks apply"
