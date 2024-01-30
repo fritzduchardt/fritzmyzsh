@@ -46,11 +46,6 @@ alias nctl="nerdctl"
 alias cpath="echo $PATH | c"
 alias s="switch"
 
-# myks
-alias ma="myks apply"
-alias mr="myks render"
-alias maa="myks all"
-
 # nc
 alias ncl="nc -v 127.0.0.1"
 
