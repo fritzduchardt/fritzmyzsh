@@ -11,7 +11,7 @@ if [[ ! -f "$ZSH_CACHE_DIR/completions/_myks" ]]; then
   _comps[myks]=_myks
 fi
 
-myks completion zsh >| "$ZSH_CACHE_DIR/completions/_myks" &|
+myks completion zsh 2>/dev/null >| "$ZSH_CACHE_DIR/completions/_myks" &|
 
 # myks
 alias ma="myks apply"

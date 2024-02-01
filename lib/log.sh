@@ -34,25 +34,25 @@ log::_logincolor() {
 }
 
 log::trace() {
-    log::_logincolor 35 TRACE "$@" 
+    log::_logincolor 35 TRACE "$@"
 }
 
 log::debug() {
-    log::_logincolor 34 DEBUG "$@" 
+    log::_logincolor 34 DEBUG "$@"
 }
 
 log::info() {
-    log::_logincolor 32 INFO "$@" 
+    log::_logincolor 32 INFO "$@"
 }
 
 log::warn() {
-    log::_logincolor 33 WARN "$@" 
+    log::_logincolor 33 WARN "$@"
 }
 
 log::error() {
-    log::_logincolor 31 ERROR "$@" 
+    log::_logincolor 31 ERROR "$@"
 }
 
 log::fatal() {
-    log::_logincolor 35 FATAL "$@" 
+    log::_logincolor 35 FATAL "$@"
 }

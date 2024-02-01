@@ -18,6 +18,9 @@ alias jc="journalctl"
 alias jcu="journalctl -u"
 alias jcuf="journalctl -f -u"
 
+# kubectl
+alias kns="kubectl config set-context --current --namespace "
+
 # ls
 alias l='ls -lFh'          #size,show type,human readable
 alias la='ls -lAFh'        #long list,show almost all,show type,human readable
