@@ -48,6 +48,7 @@ alias cat="bat"
 alias nctl="nerdctl"
 alias cpath="echo $PATH | c"
 alias s="switch"
+alias v="vim -"
 
 # nc
 alias ncl="nc -v 127.0.0.1"
