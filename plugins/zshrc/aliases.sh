@@ -47,6 +47,7 @@ alias space="du --max-depth=1 -h | sort -r -h"
 alias cat="bat"
 alias nctl="nerdctl"
 alias cpath="echo $PATH | c"
+alias ckube="echo $KUBECONFIG | c"
 alias s="switch"
 alias v="vim -"
 
