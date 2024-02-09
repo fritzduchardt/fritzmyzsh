@@ -36,6 +36,7 @@ alias lrt='ls -1Fcrt'
 alias zshconfig="vim ~/.zshrc"
 alias c="xclip -r -sel clip"
 alias ch="cat ~/.zsh_history | tail -n2 | head -n1 | perl -pe 's/^.*?;//' | c"
+alias ld="lazydocker"
 alias rgi="rg -u -i"
 alias rm="rm -rf"
 alias pwg="pwgen -s -y "$((RANDOM %20 + 20))" | cut -f1 | c"
