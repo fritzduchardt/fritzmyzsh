@@ -1,7 +1,9 @@
+source ~/projects/github/fritzmyzsh/plugins/myks/aliases.sh
+
 # Autocompletion for myks.
-if (( ! $+commands[myks] )); then
-  return
-fi
+#if (( ! $+commands[myks] )); then
+#  return
+#fi
 
 # If the completion file doesn't exist yet, we need to autoload it and
 # bind it to `myks`. Otherwise, compinit will have already done that.
@@ -11,12 +13,6 @@ if [[ ! -f "$ZSH_CACHE_DIR/completions/_myks" ]]; then
   _comps[myks]=_myks
 fi
 
-myks-patched completion zsh 2>/dev/null >| "$ZSH_CACHE_DIR/completions/_myks" &|
+myks completion zsh 2>/dev/null >| "$ZSH_CACHE_DIR/completions/_myks" &|
 
-# myks
-alias ma="myks apply"
-alias mr="myks render"
-alias ms="myks sync"
-alias maa="myks all"
-alias m="myks"
 

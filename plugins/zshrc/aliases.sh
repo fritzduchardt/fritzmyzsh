@@ -1,17 +1,41 @@
 #!/usr/bin/env bash
 
+# docker
+alias dps="docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
+alias dims="docker images"
+
 # etcd
 # member list
 alias etcdml="ETCDCTL_API=3 etcdctl member list"
 
-# Git
+# find
+alias findjpg='find . -iname "*.jpg"'
+alias finddirs='find . -type d'
+alias findfiles='find . -type f'
+alias findperm777='find . -type f -perm 777'
+alias findsetuid='find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l'
+alias findtxtdelete='find ./path/ -name "*.txt" -exec rm {} \;'
+alias findtxtstring='find ./path/ -name "*.txt" | xargs grep "string"'
+alias findbigsizes='find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z'
+alias findmodified7days='find . -type f -mtime +7d -ls'
+alias findsymlinks='find . -type l -user <username-or-userid> -ls'
+alias deleteemptydirs='find . -type d -empty -exec rmdir {} \;'
+alias findbuild='find . -maxdepth 2 -name build -type d'
+alias findnotingit='find . ! -iwholename "*.git*" -type f'
+alias findsamefile='find . -type f -samefile MY_FILE_HERE 2>/dev/null'
+alias modifypermissions='find . -type f -exec chmod 644 {} \;'
+alias findyaml='find . -regex ".*\.\(yml\|yaml\)$"'
+alias createdlast20mins='find . -cmin -20'
+alias createdlast2days='find . -ctime +1'
+alias findmultiplepaths='find [path-a] [path-b] -type f'
+alias findandremovepyc='find . -name "*.pyc" -exec rm -rf {} \;'
+
+# git
 alias lg="lazygit"
 alias pushmr="git push origin HEAD -o merge_request.create"
 alias stashall="ga . && git stash"
+alias rmlock="rm .git/index.lock"
 
-# docker
-alias dps="docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
-alias dims="docker images"
 
 # journalctl
 alias jc="journalctl"
