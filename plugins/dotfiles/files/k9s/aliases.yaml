@@ -19,3 +19,4 @@ aliases:
   ne: networkendpoints
   np: networkpaths
   nl: networklinks
+  ch: channels

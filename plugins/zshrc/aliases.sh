@@ -36,7 +36,6 @@ alias pushmr="git push origin HEAD -o merge_request.create"
 alias stashall="ga . && git stash"
 alias rmlock="rm .git/index.lock"
 
-
 # journalctl
 alias jc="journalctl"
 alias jcu="journalctl -u"
@@ -46,15 +45,13 @@ alias jcuf="journalctl -f -u"
 alias kns="kubectl config set-context --current --namespace "
 
 # ls
-alias l='ls -lFh'          #size,show type,human readable
-alias la='ls -lAFh'        #long list,show almost all,show type,human readable
-alias lr='ls -tRFh'        #sorted by date,recursive,show type,human readable
-alias lt='ls -ltFh'        #long list,sorted by date,show type,human readable
-alias ll='ls -l'           #long list
-alias ldot='ls -ld .*'
-alias lS='ls -1FSsh'
-alias lart='ls -1Fcart'
-alias lrt='ls -1Fcrt'
+alias l='ls -lFh'       #size,show type,human readable
+alias la='ls -lAFh'     #long list,show almost all,show type,human readable
+alias lt='ls -ltFh'     #long list,sorted by date,show type,human readable
+alias ll='ls -l'        #long list
+alias ldot='ls -ld .*'  # List dot files
+alias lS='ls -1FSsh'    # List files in a single column, sorted by size
+alias ltc='ls -lhtc'    # List files sorted by modification time
 
 # misc
 alias zshconfig="vim ~/.zshrc"
@@ -63,7 +60,7 @@ alias ch="cat ~/.zsh_history | tail -n2 | head -n1 | perl -pe 's/^.*?;//' | c"
 alias ld="lazydocker"
 alias rgi="rg -u -i"
 alias rm="rm -rf"
-alias pwg="pwgen -s -y "$((RANDOM %20 + 20))" | cut -f1 | c"
+alias pwg="pwgen -s -y "$((RANDOM % 20 + 20))" | cut -f1 | c"
 alias fzf="fzf --ansi"
 alias aa="alias | fzf"
 alias rg="rg -i"
