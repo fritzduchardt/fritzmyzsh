@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC2142
 
 # docker
 alias dps="docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
@@ -35,6 +36,10 @@ alias lg="lazygit"
 alias pushmr="git push origin HEAD -o merge_request.create"
 alias stashall="ga . && git stash"
 alias rmlock="rm .git/index.lock"
+
+# ip
+# show ips and not much else
+alias ips="ip -4 -o addr show scope global | awk '{print \$2, \$4}' | cut -d/ -f1"
 
 # journalctl
 alias jc="journalctl"
