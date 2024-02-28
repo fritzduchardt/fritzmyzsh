@@ -57,13 +57,12 @@ alias ll='ls -l'        #long list
 alias ldot='ls -ld .*'  # List dot files
 alias lS='ls -1FSsh'    # List files in a single column, sorted by size
 alias ltc='ls -lhtc'    # List files sorted by modification time
-
+alias latn='ls -lat | head -n20' # List most recent files
 # misc
 alias zshconfig="vim ~/.zshrc"
 alias c="xclip -r -sel clip"
 alias ch="cat ~/.zsh_history | tail -n2 | head -n1 | perl -pe 's/^.*?;//' | c"
 alias ld="lazydocker"
-alias rgi="rg -u -i"
 alias rm="rm -rf"
 alias pwg="pwgen -s -y "$((RANDOM % 20 + 20))" | cut -f1 | c"
 alias fzf="fzf --ansi"
@@ -77,6 +76,10 @@ alias cpath="echo \$PATH | c"
 alias ckube="echo \$KUBECONFIG | c"
 alias s="switch"
 alias v="vim -"
+
+# ripgrep
+alias rgi="rg -u -i"
+alias rgl="rg -l" #list files containing matches
 
 # nc
 alias ncl="nc -v 127.0.0.1"
