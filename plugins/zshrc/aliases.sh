@@ -58,6 +58,7 @@ alias ldot='ls -ld .*'  # List dot files
 alias lS='ls -1FSsh'    # List files in a single column, sorted by size
 alias ltc='ls -lhtc'    # List files sorted by modification time
 alias latn='ls -lat | head -n20' # List most recent files
+
 # misc
 alias zshconfig="vim ~/.zshrc"
 alias c="xclip -r -sel clip"
@@ -76,6 +77,7 @@ alias cpath="echo \$PATH | c"
 alias ckube="echo \$KUBECONFIG | c"
 alias s="switch"
 alias v="vim -"
+alias pc="pwd | c"
 
 # ripgrep
 alias rgi="rg -u -i"
