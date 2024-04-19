@@ -52,6 +52,7 @@ alias kns="k ns"
 # ls
 alias l='ls -lFh'       #size,show type,human readable
 alias la='ls -lAFh'     #long list,show almost all,show type,human readable
+alias lat='ls -lAFht'     #long list,show almost all,show type,human readable
 alias lt='ls -ltFh'     #long list,sorted by date,show type,human readable
 alias ll='ls -l'        #long list
 alias ldot='ls -ld .*'  # List dot files
