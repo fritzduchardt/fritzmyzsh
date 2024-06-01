@@ -48,6 +48,8 @@ alias jcuf="journalctl -f -u"
 
 # kubectl
 alias kns="k ns"
+alias kcns="k create ns"
+alias k="kubecolor"
 
 # ls
 alias l='ls -lFh'       #size,show type,human readable
