@@ -52,14 +52,14 @@ alias kcns="k create ns"
 alias k="kubecolor"
 
 # ls
-alias l='ls -lFh'       #size,show type,human readable
-alias la='ls -lAFh'     #long list,show almost all,show type,human readable
-alias lat='ls -lAFht'     #long list,show almost all,show type,human readable
-alias lt='ls -ltFh'     #long list,sorted by date,show type,human readable
-alias ll='ls -l'        #long list
-alias ldot='ls -ld .*'  # List dot files
-alias lS='ls -1FSsh'    # List files in a single column, sorted by size
-alias ltc='ls -lhtc'    # List files sorted by modification time
+alias l='ls -lFh'                #size,show type,human readable
+alias la='ls -lAFh'              #long list,show almost all,show type,human readable
+alias lat='ls -lAFht'            #long list,show almost all,show type,human readable
+alias lt='ls -ltFh'              #long list,sorted by date,show type,human readable
+alias ll='ls -l'                 #long list
+alias ldot='ls -ld .*'           # List dot files
+alias lS='ls -1FSsh'             # List files in a single column, sorted by size
+alias ltc='ls -lhtc'             # List files sorted by modification time
 alias latn='ls -lat | head -n20' # List most recent files
 
 # misc
@@ -71,7 +71,6 @@ alias rm="rm -rf"
 alias pwg="pwgen -s -y "$((RANDOM % 20 + 20))" | cut -f1 | c"
 alias fzf="fzf --ansi"
 alias aa="alias | fzf"
-alias rg="rg -i"
 alias fd="fd --no-ignore --hidden --exclude .git"
 alias space="du --max-depth=1 -h | sort -r -h"
 alias cat="bat"
@@ -82,7 +81,8 @@ alias s="switch"
 alias v="vim -"
 alias pc="pwd | c"
 
-# ripgrep
+# rip grep
+alias rg="rg -i"
 alias rgi="rg -u -i"
 alias rgl="rg -l" #list files containing matches
 
