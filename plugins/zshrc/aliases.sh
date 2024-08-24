@@ -36,6 +36,7 @@ alias lg="lazygit"
 alias pushmr="git push origin HEAD -o merge_request.create"
 alias stashall="ga . && git stash"
 alias rmlock="rm .git/index.lock"
+alias amend="ga . && gc! --no-edit && ggpush -f"
 
 # ip
 # show ips and not much else
@@ -47,7 +48,10 @@ alias jcu="journalctl -u"
 alias jcuf="journalctl -f -u"
 
 # kubectl
-alias kns="k ns"
+kns() {
+  k ns
+  export RPROMPT='%F{blue} '"$(cluster-info)"'%f'
+}
 alias kcns="k create ns"
 alias k="kubecolor"
 
