@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-source ~/projects/github/k8s-tools/config_rc.sh
-source ~/projects/github/k8s-admin-shell/config_rc.sh
-source ~/projects/github/linux-tools/config_rc.sh
+source /home/fritz/projects/github/k8s-tools/lib/utils.sh
+source /home/fritz/projects/github/k8s-tools/configrc.sh
+source /home/fritz/projects/github/k8s-admin-shell/configrc.sh
+source /home/fritz/projects/github/linux-tools/configrc.sh

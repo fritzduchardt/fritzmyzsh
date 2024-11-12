@@ -50,7 +50,10 @@ alias jcuf="journalctl -f -u"
 # kubectl
 kns() {
   k ns
-  export RPROMPT='%F{blue} '"$(cluster-info)"'%f'
+  local -r ci="$(cluster-info)"
+  if [[ -n "$ci" ]]; then
+    export RPROMPT='%F{blue} '$ci'%f'
+  fi
 }
 alias kcns="k create ns"
 alias k="kubecolor"
@@ -95,3 +98,7 @@ alias ncl="nc -v 127.0.0.1"
 
 # ss
 alias ss="ss -tlpn"
+
+# systemctl
+alias sc="sudo systemctl"
+alias jc="journalctl"
