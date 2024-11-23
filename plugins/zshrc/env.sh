@@ -7,3 +7,4 @@ export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"
 export MCFLY_FUZZY=2
 export MCFLY_RESULTS=20
 export MCFLY_PROMPT="?"
+export MCFLY_LIGHT=TRUE
