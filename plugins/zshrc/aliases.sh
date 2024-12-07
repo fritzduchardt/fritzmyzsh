@@ -101,3 +101,6 @@ alias ss="ss -tlpn"
 # systemctl
 alias sc="sudo systemctl"
 alias jc="journalctl"
+
+# myks
+alias myksdev="myks_render_n_apply"
