@@ -38,6 +38,9 @@ alias stashall="ga . && git stash"
 alias rmlock="rm .git/index.lock"
 alias amend="ga . && gc! --no-edit && ggpush -f"
 
+# Home automation
+alias ha_config="/home/fritz/projects/github/m5-cluster/scripts/ip_tables.sh"
+
 # ip
 # show ips and not much else
 alias ips="ip -4 -o addr show scope global | awk '{print \$2, \$4}' | cut -d/ -f1"
@@ -86,6 +89,8 @@ alias ckube="echo \$KUBECONFIG | c"
 alias s="switch"
 alias v="vim -"
 alias pc="pwd | c"
+alias x="chmod +x"
+alias e="env | rg"
 
 # rip grep
 alias rg="rg -i"
