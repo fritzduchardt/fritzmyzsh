@@ -8,6 +8,3 @@ export MCFLY_FUZZY=2
 export MCFLY_RESULTS=20
 export MCFLY_PROMPT="?"
 export MCFLY_LIGHT=TRUE
-
-# K8s
-export RPROMPT='%F{blue} $(cluster-info)%f'
