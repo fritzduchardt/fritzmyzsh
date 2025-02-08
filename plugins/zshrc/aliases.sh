@@ -51,16 +51,9 @@ alias jcu="journalctl -u"
 alias jcuf="journalctl -f -u"
 
 # kubectl
-kns() {
-  k ns
-  local -r ci="$(cluster-info)"
-  if [[ -n "$ci" ]]; then
-    export RPROMPT='%F{blue} '$ci'%f'
-  fi
-}
 alias kcns="k create ns"
 alias k="kubecolor"
-
+alias ns="k ns"
 # ls
 alias l='ls -lFh'                #size,show type,human readable
 alias la='ls -lAFh'              #long list,show almost all,show type,human readable
@@ -93,12 +86,16 @@ alias x="chmod +x"
 alias e="env | rg"
 
 # rip grep
-alias rg="rg -i"
-alias rgi="rg -u -i"
-alias rgl="rg -l" #list files containing matches
+alias rg="rg -i" # case insensitive
+alias rgi="rg -u -i" #  hidden files
+alias rgl="rg -l" # list file names containing matches
 
 # nc
 alias ncl="nc -v 127.0.0.1"
+
+# sops
+alias sopsd="fd '\w+.sops.yaml' -x sops -i -d;" # decrypt all
+alias sopse="fd '\w+.sops.yaml' -x sops -i -e;" # encrypt all
 
 # ss
 alias ss="ss -tlpn"
