@@ -37,9 +37,10 @@ alias pushmr="git push origin HEAD -o merge_request.create"
 alias stashall="ga . && git stash"
 alias rmlock="rm .git/index.lock"
 alias amend="ga . && gc! --no-edit && ggpush -f"
+alias gconfig="git config pull.rebase true"
 
 # Home automation
-alias ha_config="/home/fritz/projects/github/m5-cluster/scripts/ip_tables.sh"
+alias ha_config="/home/fritz/projects/github/lab-ansible/scripts/ip_tables.sh"
 
 # ip
 # show ips and not much else
@@ -84,6 +85,8 @@ alias v="vim -"
 alias pc="pwd | c"
 alias x="chmod +x"
 alias e="env | rg"
+alias trace="export LOG_LEVEL=trace"
+alias nolog="unset LOG_LEVEL"
 
 # rip grep
 alias rg="rg -i" # case insensitive
