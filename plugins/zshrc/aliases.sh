@@ -4,6 +4,8 @@
 # docker
 alias dps="docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
 alias dims="docker images"
+alias ddebug='docker run -u $(id -u):$(id -g) -it -v $(pwd):/work --rm --entrypoint sh'
+alias ddebugroot='docker run -it -v $(pwd):/work --rm --entrypoint sh'
 
 # etcd
 # member list
@@ -86,7 +88,7 @@ alias pc="pwd | c"
 alias x="chmod +x"
 alias e="env | rg"
 alias trace="export LOG_LEVEL=trace"
-alias nolog="unset LOG_LEVEL"
+alias notrace="unset LOG_LEVEL"
 
 # rip grep
 alias rg="rg -i" # case insensitive
