@@ -8,3 +8,7 @@ export MCFLY_FUZZY=2
 export MCFLY_RESULTS=20
 export MCFLY_PROMPT="?"
 export MCFLY_LIGHT=FALSE
+
+# fabric
+export OBSIDIAN_VAULT_PATH=/home/fritz/Sync/private
+export FABRIC_PATTERN_PATH=/home/fritz/Sync/patterns
