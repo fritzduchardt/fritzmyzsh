@@ -10,5 +10,6 @@ export MCFLY_PROMPT="?"
 export MCFLY_LIGHT=FALSE
 
 # fabric
-export OBSIDIAN_VAULT_PATH=/home/fritz/Sync/private
-export FABRIC_PATTERN_PATH=/home/fritz/Sync/patterns
+export OBSIDIAN_VAULT_PATH_1=/home/fritz/Sync/FritzSync/private
+export FABRIC_PATTERN_PATH=/home/fritz/Sync/FritzSync/patterns
+export PRIVATE_PATTERN_DIR=/home/fritz/Sync/FritzSync/patterns
