@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2142
 
+# ansible
+alias ap=ansible-playbook
+
 # docker
 alias dps="docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
 alias dims="docker images"
