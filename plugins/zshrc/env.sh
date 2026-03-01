@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# System
-export BROWSER=/usr/bin/firefox
-
 # McFly
 export MCFLY_DELETE_WITHOUT_CONFIRM=true
 
@@ -12,9 +9,10 @@ export MCFLY_RESULTS=20
 export MCFLY_PROMPT="?"
 export MCFLY_LIGHT=FALSE
 
-# fabric
-export OBSIDIAN_VAULT_PATH_1=FritzSync/private
-export OBSIDIAN_VAULT_PATH_2=BubaFritzShare/private
-export OBSIDIAN_BASE_PATH=/home/fritz/Sync
-export FABRIC_PATTERN_PATH=/home/fritz/Sync/FritzSync/patterns
-export PRIVATE_PATTERN_DIR=/home/fritz/Sync/FritzSync/patterns
+# oneshot
+export OS_CONFIG_ENV_FILE=/home/fritz/.config/fabric/.env
+export OS_CONFIG_PATTERN_DIR=/home/fritz/.config/fabric/patterns
+export OS_PATTERN_TEMPLATE_DIR=/home/fritz/Sync/FritzSync/patterns
+export OS_MARKDOWN_BASE_DIR=/home/fritz/Sync/
+export OS_MARKDOWN_VAULT_DIR_1=FritzSync/private
+export OS_MARKDOWN_VAULT_DIR_2=BubaFritzShare/private
